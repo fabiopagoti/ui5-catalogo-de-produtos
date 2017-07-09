@@ -1,8 +1,9 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demo.odata.controller.S2"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="{i18n>product}">
+	<Page title="{i18n>products}">
 		<content>
-			<List items="{/Categories(1)/Products}">
+			<ObjectHeader title="{Name}"/>
+			<List id="product_list" items="{Products}">
 				<items>
 					<StandardListItem title="{Name}"/>
 				</items>

@@ -52,12 +52,8 @@
 			"": {
 				"type": "sap.ui.model.odata.v2.ODataModel",
 				"settings": {
-					"defaultOperationMode": "Server",
-					"defaultBindingMode": "OneTime",
-					"defaultCountMode": "Request"
 				},
-				"dataSource": "mainService",
-				"preload": true
+				"dataSource": "mainService"
 			},
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
@@ -78,16 +74,24 @@
 				"clearAggregation": true,
 				"viewType": "XML"
 			},
+			"routes": [{
+				"name": "categories",
+				"pattern": "",
+				"target": ["categories"]
+			}, {
+				"name": "products",
+				"pattern": "categoria/{id}",
+				"target": ["products", "categories"]
+			}],
 			"targets": {
 				"categories": {
 					"viewName": "S1"
+				},
+				"products": {
+					"viewName": "S2",
+					"controlAggregation": "detailPages"
 				}
-			},
-			"routes": [{
-				"name": "default",
-				"pattern": "",
-				"target": ["categories"]
-			}]
+			}
 		}
 	}
 }

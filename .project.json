@@ -24,5 +24,10 @@
     "defaultLanguage": "en",
     "defaultI18NPropertyFile": "",
     "resourceModelName": ""
+  },
+  "basevalidator": {
+    "services": {
+      "js": "jsValidator"
+    }
   }
 }
