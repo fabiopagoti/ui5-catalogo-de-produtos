@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
 	controllerName="demo.odata.controller.S0">
-	<SplitApp id="root">
+	<SplitApp id="root" mode="PopoverMode" >
 		<masterPages>
 			
 		</masterPages>

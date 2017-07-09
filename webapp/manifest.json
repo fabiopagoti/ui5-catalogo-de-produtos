@@ -53,7 +53,7 @@
 				"type": "sap.ui.model.odata.v2.ODataModel",
 				"settings": {
 					"defaultOperationMode": "Server",
-					"defaultBindingMode": "OneTime",
+					"defaultBindingMode": "TwoWay",
 					"defaultCountMode": "Request"
 				},
 				"dataSource": "mainService",
@@ -76,17 +76,28 @@
 				"controlId": "root",
 				"controlAggregation": "masterPages",
 				"clearAggregation": true,
-				"viewType": "XML"
+				"viewType": "XML",
+				"bypassed": {
+					"target": ["categories"]
+				}
 			},
 			"targets": {
 				"categories": {
 					"viewName": "S1"
+				},
+				"products": {
+					"viewName": "S2",
+					"controlAggregation": "detailPages"
 				}
 			},
 			"routes": [{
 				"name": "default",
 				"pattern": "",
 				"target": ["categories"]
+			}, {
+				"name": "products",
+				"pattern": "category/{category_id}",
+				"target": ["products", "categories"]
 			}]
 		}
 	}

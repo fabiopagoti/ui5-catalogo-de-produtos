@@ -2,11 +2,20 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="{i18n>product}">
 		<content>
-			<List items="{/Categories(1)/Products}">
+			
+			<!--<Label text="Categoria" />-->
+			<!--<Text text="{Name}" />-->
+			<ObjectHeader intro="Categoria" title="{Name}" />
+			
+			<List id="list_products" items="{Products}">
 				<items>
 					<StandardListItem title="{Name}"/>
 				</items>
 			</List>
+			<!--<List id="list_products">-->
+				
+			<!--</List>-->
+			
 		</content>
 	</Page>
 </mvc:View>
