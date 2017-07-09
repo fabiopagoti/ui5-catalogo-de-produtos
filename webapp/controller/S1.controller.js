@@ -17,6 +17,10 @@ sap.ui.define([
 			this._oRouter.navTo('products', {
 				id: oCategoryObject.ID
 			});
+		},
+
+		onAdd: function(oEvent) {
+			this._oRouter.navTo('register');
 		}
 
 	});

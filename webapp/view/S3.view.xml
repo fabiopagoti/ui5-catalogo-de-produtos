@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m"
+	controllerName="demo.odata.controller.S3" xmlns:form="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml">
+	<semantic:FullscreenPage title="{i18n>register}">
+		<semantic:content>
+			<form:SimpleForm>
+				<Label text="ID"/>
+				<Input id="input_id"/>
+				<Label text="Nome"/>
+				<Input id="input_nome"/>
+			</form:SimpleForm>
+		</semantic:content>
+		<semantic:saveAction>
+			<semantic:SaveAction press="onSave"/>
+		</semantic:saveAction>
+		<semantic:cancelAction>
+			<semantic:CancelAction press="onCancel"/>
+		</semantic:cancelAction>
+	</semantic:FullscreenPage>
+</mvc:View>

@@ -10,7 +10,7 @@
 		"description": "{{appDescription}}",
 		"dataSources": {
 			"mainService": {
-				"uri": "/oData_Demos/V2/OData/OData.svc/",
+				"uri": "/oData_Demos/V2/(S(a))/OData/OData.svc/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
@@ -51,8 +51,7 @@
 		"models": {
 			"": {
 				"type": "sap.ui.model.odata.v2.ODataModel",
-				"settings": {
-				},
+				"settings": {},
 				"dataSource": "mainService"
 			},
 			"i18n": {
@@ -82,6 +81,12 @@
 				"name": "products",
 				"pattern": "categoria/{id}",
 				"target": ["products", "categories"]
+			}, {
+				"name": "register",
+				"pattern": "cadastro",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["cadastro", "categories"]
 			}],
 			"targets": {
 				"categories": {
@@ -89,6 +94,13 @@
 				},
 				"products": {
 					"viewName": "S2",
+					"controlAggregation": "detailPages"
+				},
+				"cadastro": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "S3",
 					"controlAggregation": "detailPages"
 				}
 			}
