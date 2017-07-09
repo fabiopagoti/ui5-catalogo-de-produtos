@@ -18,6 +18,14 @@
         "entryPath": "/test-resources"
       },
       "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/oData_Demos",
+      "target": {
+        "type": "destination",
+        "name": "oData_Demos"
+      },
+      "description": "ServiÃ§os de Exempl de oData"
     }
   ]
 }

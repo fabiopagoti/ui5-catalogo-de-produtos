@@ -3,7 +3,26 @@
     {
       "templateId": "ui5template.basicSAPUI5ApplicationComponent",
       "templateVersion": "1.4.0",
-      "dateTimeStamp": "Sat, 08 Jul 2017 19:12:22 GMT"
+      "dateTimeStamp": "Sat, 08 Jul 2017 20:45:16 GMT"
+    },
+    {
+      "templateId": "servicecatalog.connectivityComponent",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Sat, 08 Jul 2017 19:58:11 GMT"
     }
-  ]
+  ],
+  "mockpreview": {
+    "mockUri": "/oData_Demos/V2/OData/OData.svc/",
+    "metadataFilePath": "localService/metadata.xml",
+    "loadJSONFiles": true,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,pt",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
+  }
 }
